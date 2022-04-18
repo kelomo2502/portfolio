@@ -41,6 +41,7 @@ body {
 .nav-bar a {
   text-decoration: none;
   color: #fff;
+  font-size: 25px;
 }
 
 .nav-bar img {
