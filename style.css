@@ -191,6 +191,9 @@ h1 {
   justify-content: flex-start;
   align-items: baseline;
 }
+.works-btn li {
+  list-style-type: none;
+}
 
 .see-works {
   font-family: "Inter", sans-serif;
