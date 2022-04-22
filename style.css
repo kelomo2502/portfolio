@@ -195,6 +195,10 @@ h1 {
   list-style-type: none;
 }
 
+.works-card-btn li {
+  list-style-type: none;
+}
+
 .see-works {
   font-family: "Inter", sans-serif;
   font-size: 17px;
