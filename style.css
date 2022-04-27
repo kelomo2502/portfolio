@@ -403,10 +403,8 @@ h1 {
 }
 
 .contact h6 {
-  font-family:
-    'Inter',
-    sans-serif;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+ font-weight: 700;
   font-size: 32px;
   color: #172b40;
   text-align: center;
