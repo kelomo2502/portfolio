@@ -178,9 +178,7 @@ h1 {
   margin-right: 12px;
   background: #fff;
   cursor: pointer;
-  font-family:
-    "Inter",
-    sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -330,6 +328,7 @@ h1 {
   margin-left: 24px;
   margin-top: 24px;
   border: none;
+  width: 50%;
 }
 
 .technologies {
@@ -412,6 +411,17 @@ h1 {
   color: #172b40;
   text-align: center;
   padding-bottom: 73px;
+}
+
+.contact form>input {
+  width: 100%;
+  border: none;
+  padding: 14px 10px;
+  font-family:
+    'Inter',
+    sans-serif;
+  font-size: 15px;
+  color: #979493;
 }
 
 .contact form>textarea {
