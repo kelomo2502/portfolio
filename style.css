@@ -415,3 +415,17 @@ h1 {
   margin-bottom: 24px;
   padding: 0 10px;
 }
+
+.form-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff6b00;
+  width: 131px;
+  height: 48px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 00.03em;
+}
