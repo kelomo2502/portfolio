@@ -444,3 +444,10 @@ form {
 footer {
   min-height: 20vh;
 }
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
