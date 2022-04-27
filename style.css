@@ -394,3 +394,11 @@ h1 {
   color: #fff;
   margin: 0 24px;
 }
+
+.contact {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 50vh;
+}
