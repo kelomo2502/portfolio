@@ -436,3 +436,7 @@ form {
   justify-content: space-around;
   min-height: 50vh;
 }
+
+.upper-hr {
+  margin-bottom: 30px;
+}
