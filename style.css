@@ -480,13 +480,13 @@ footer {
 }
 
 .cards-btn:hover {
-  background: #e5e5e5;
+  background: #fff5e1;
   color: #f55800;
 }
 
 .cards-btn:active {
   background: #ff6b00;
-  color: #fff;
+  color: #f4f1f0;
 }
 
 .cards-btn:disabled {
