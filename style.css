@@ -429,3 +429,10 @@ h1 {
   margin: 0 auto;
   letter-spacing: 00.03em;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 50vh;
+}
