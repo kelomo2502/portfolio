@@ -413,7 +413,7 @@ h1 {
   padding-bottom: 73px;
 }
 
-.contact form>input {
+.contact form > input {
   width: 100%;
   border: none;
   padding: 14px 10px;
@@ -424,12 +424,12 @@ h1 {
   color: #979493;
 }
 
-.contact form>textarea {
+.contact form > textarea {
   width: 100%;
   border: none;
   background: #fbf8f7;
   margin-top: 24px;
-  font-family:'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   margin-bottom: 24px;
   padding: 14px 10px;
