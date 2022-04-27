@@ -403,6 +403,17 @@ h1 {
   min-height: 50vh;
 }
 
+.contact h6 {
+  font-family:
+    'Inter',
+    sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b40;
+  text-align: center;
+  padding-bottom: 73px;
+}
+
 .contact form>textarea {
   width: 100%;
   border: none;
@@ -450,4 +461,29 @@ footer {
   justify-content: center;
   align-items: center;
   height: auto;
+}
+
+.footer-socials li {
+  list-style-type: none;
+  padding: 25px 10px;
+}
+
+.cards-btn:enabled {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.cards-btn:hover {
+  background: #e5e5e5;
+  color: #f55800;
+}
+
+.cards-btn:active {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.cards-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
