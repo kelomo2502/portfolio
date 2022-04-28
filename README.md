@@ -1,6 +1,6 @@
 # MY Personal portfolio Project
 
-> This project is about building the first two sections of my porfolio as a web and software developer.
+> This project is part of Module 1 Week 2 Microverse curriculum where we are working on making our portfolio. In this branch I have worked with my coding partner on building contact section and footer. I have also used formspree to collect users' input data. I have followed the design, color and template according to figma design
 
 ## Built With
 
