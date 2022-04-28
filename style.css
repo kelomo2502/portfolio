@@ -178,9 +178,7 @@ h1 {
   margin-right: 12px;
   background: #fff;
   cursor: pointer;
-  font-family:
-    "Inter",
-    sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -330,6 +328,7 @@ h1 {
   margin-left: 24px;
   margin-top: 24px;
   border: none;
+  width: 50%;
 }
 
 .technologies {
@@ -404,9 +403,7 @@ h1 {
 }
 
 .contact h6 {
-  font-family:
-    'Inter',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   color: #172b40;
@@ -430,12 +427,10 @@ h1 {
   border: none;
   background: #fbf8f7;
   margin-top: 24px;
-  font-family:
-    'Inter',
-    sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   margin-bottom: 24px;
-  padding: 0 10px;
+  padding: 14px 10px;
 }
 
 .form-btn {
@@ -464,7 +459,7 @@ form {
 }
 
 footer {
-  min-height: 20vh;
+  height: 20vh;
 }
 
 .footer-socials {
@@ -485,13 +480,13 @@ footer {
 }
 
 .cards-btn:hover {
-  background: #e5e5e5;
+  background: #fff5e1;
   color: #f55800;
 }
 
 .cards-btn:active {
   background: #ff6b00;
-  color: #fff;
+  color: #f4f1f0;
 }
 
 .cards-btn:disabled {
