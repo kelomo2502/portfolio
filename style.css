@@ -766,4 +766,10 @@ text-align: center;
   width: 161px;
  }
 
+ .technologies {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   
+ }
+
 }
