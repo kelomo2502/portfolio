@@ -725,15 +725,45 @@ text-align: center;
   }
 
   .about-details {
-    padding-bottom: 31vh;
     background-image: url(./images/about-bg.png);
     background-position: bottom 100px right;
     background-size: 40%;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0;
+    height: 87vh;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
   }
 
   .about-details h4, .about-details p {
+    margin: 0;
+    width: 566px;
     text-align: left;
-    width: 43vw;
   }
+
+.about-details h4 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 82px;
+  margin-bottom: 24px;
+}
+
+.about-details p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+ .about-details button {
+  margin-left: 0;
+  width: 161px;
+ }
+
 }
