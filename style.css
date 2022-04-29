@@ -769,7 +769,36 @@ text-align: center;
  .technologies {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   
+   align-content: unset;
+   height: auto;
+
+ }
+
+ .span-div {
+   text-align: left;
+   margin: 0;
+  
+ }
+
+ .technologies ul {
+   align-items: unset;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: left;
+ }
+
+ .technologies span {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+ }
+
+ .technologies li {
+   margin: 12px;
  }
 
 }
