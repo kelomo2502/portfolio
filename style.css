@@ -582,6 +582,10 @@ footer {
   align-items: unset;
   height: unset;
 }
+
+.my-job h3 {
+  padding-top: 15px;
+}
 .social {
   width: auto;
   height: 42vh;
@@ -799,6 +803,56 @@ text-align: center;
 
  .technologies li {
    margin: 12px;
+ }
+
+ .contact {
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ .contact h6 {
+   width: 35%;
+   text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+ }
+
+ .contact br {
+   display: none;
+ }
+
+ form {
+   width: 60%;
+ }
+
+ .form-btn {
+   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+ }
+
+ .contact form > input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+ }
+
+ .contact form > textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; 
+ }
+
+ .footer {
+   height: unset;
  }
 
 }
