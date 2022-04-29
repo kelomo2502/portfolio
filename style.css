@@ -498,14 +498,6 @@ footer {
   display: none;
 }
 
-
-
-/* @media screen and (max-width: 992px) {
-  .nav-links {
-    display: none;
-  }
-} */
-
 @media screen and (min-width: 992px) {
  
   * {
@@ -702,5 +694,46 @@ text-align: center;
   .works-cards {
     margin: 0;
 
+  }
+
+  .works-cards h2 p {
+    display: none;
+  }
+
+  .grid-1 {
+    background: url(./images/grid-1.png);
+  }
+
+  .grid-2 {
+   background: url(./images/grid-2.png);
+  }
+
+  .grid-3 {
+    background: url(./images/grid-3.png);
+  }
+
+  .grid-4 {
+    background: url(./images/grid-4.png);
+  }
+
+  .grid-5 {
+    background: url(./images/project-img.png);
+  }
+  
+  .grid-6 {
+    background: url(./images/grid-6.png);
+  }
+
+  .about-details {
+    padding-bottom: 31vh;
+    background-image: url(./images/about-bg.png);
+    background-position: bottom 100px right;
+    background-size: 40%;
+    background-repeat: no-repeat;
+  }
+
+  .about-details h4, .about-details p {
+    text-align: left;
+    width: 43vw;
   }
 }
