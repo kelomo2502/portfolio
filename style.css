@@ -692,5 +692,15 @@ text-align: center;
   font-weight: 500;
   line-height: 20px;
 }
-  
+
+.works-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+  .works-cards {
+    margin: 0;
+
+  }
 }
