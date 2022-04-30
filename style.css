@@ -683,12 +683,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 24px; 
+    gap: 24px;
   }
 
   .works-cards {
-  margin: 0;
-  min-height: 40vh;
+    margin: 0;
+    min-height: 40vh;
   }
 
   .about-details {
