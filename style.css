@@ -334,7 +334,7 @@ h1 {
 .technologies {
   color: #fff;
   padding-top: 20.4vh;
-  min-height: 150vh;
+  min-height: 70vh;
   padding-bottom: 132px;
   display: flex;
   flex-direction: column;
@@ -351,13 +351,16 @@ h1 {
 .technologies ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: flex-start;
   align-items: center;
 }
 
 .lang ul {
   display: flex;
-  min-height: 50vh;
+  flex-direction: column;
+  justify-content: flex-start;
+
 }
 
 .technologies span {
@@ -370,13 +373,15 @@ h1 {
 }
 
 .frameworks ul {
-  display: flex;
-  min-height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
 }
 
 .skills ul {
-  display: flex;
-  min-height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
 }
 
 .technologies li {
@@ -739,11 +744,13 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     align-content: unset;
     height: auto;
+    padding-top: inherit;
   }
 
   .span-div {
+    display: block;
     text-align: left;
-    margin: 0;
+    margin-bottom: 18px;
   }
 
   .technologies ul {
@@ -764,7 +771,10 @@ footer {
   }
 
   .technologies li {
-    margin: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
   }
 
   .contact {
