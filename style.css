@@ -538,6 +538,10 @@ footer {
     display: none;
   }
 
+  #hidden {
+    display: none;
+  }
+
 
   #drop-menu {
     display: none;
@@ -709,13 +713,21 @@ text-align: center;
   .works-cards {
     margin: 0;
   }
-
+ 
   .grid-1 {
     background: url(./images/grid-1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+ 
   }
 
   .grid-2 {
    background: url(./images/grid-2.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
   }
 
   .grid-3 {
@@ -732,6 +744,43 @@ text-align: center;
   
   .grid-6 {
     background: url(./images/grid-6.png);
+  }
+
+  .cards-btn {
+    display: none;
+  }
+
+.desktop-grid-btn {
+  height: 7.2vh;
+  width: 100%;
+  border: none;
+  background: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: -6px;
+  line-height: 24px;
+  letter-spacing: 0.03%;
+  text-align: center;
+  color: #fff;
+}
+
+
+  .desktop-h2 {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+  
+  }
+
+  .desktop-p {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
   }
 
   .about-details {
