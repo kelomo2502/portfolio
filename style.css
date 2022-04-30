@@ -688,8 +688,8 @@ footer {
 
   .works-cards {
     margin: 0;
-   min-height: 45vh;
-   max-height: 55vh;
+    min-height: 45vh;
+    max-height: 55vh;
   }
 
   .about-details {
