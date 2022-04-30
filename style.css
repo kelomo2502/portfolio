@@ -351,7 +351,6 @@ h1 {
 .technologies ul {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   justify-content: flex-start;
   align-items: center;
 }
@@ -360,7 +359,6 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
 }
 
 .technologies span {
@@ -373,15 +371,15 @@ h1 {
 }
 
 .frameworks ul {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .skills ul {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .technologies li {
