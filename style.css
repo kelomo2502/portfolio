@@ -443,8 +443,6 @@ h1 {
   height: 48px;
   border: none;
   display: block;
-  margin: 0 auto;
-  letter-spacing: 00.03em;
 }
 
 form {
@@ -494,11 +492,12 @@ footer {
   color: #5b5957;
 }
 
-.nav-links {
-  display: none;
+  .nav-links {
+    display: none;
 }
 
-@media screen and (min-width: 992px) {
+
+@media screen and (min-width: 768px) {
  
   * {
     padding: 0;
@@ -526,22 +525,6 @@ footer {
     background-size: 500px;
     height: 100vh;
   }
-
-  #mobile-grid-1, #mobile-grid-2,
-  #mobile-grid-3, #mobile-grid-4,
-  #mobile-grid-5, #mobile-grid-6 {
-    display: none;
-  }
-
-  #mobile-p-1, #mobile-p-2, #mobile-p-3,
-  #mobile-p-4, #mobile-p-5, #mobile-p-6 {
-    display: none;
-  }
-
-  #hidden {
-    display: none;
-  }
-
 
   #drop-menu {
     display: none;
@@ -610,6 +593,7 @@ footer {
   
 }
 
+
    .name-job {
      width: 42vw;
      display: flex;
@@ -664,7 +648,7 @@ footer {
 }
 
 .see-works {
-  width: 11.3vw;
+width: 11.3vw;
 font-family: 'Inter', sans-serif;
 font-size: 16px;
 font-weight: 700;
@@ -677,7 +661,6 @@ text-align: center;
   padding-top: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .posts-container p {
@@ -712,75 +695,6 @@ text-align: center;
 }
   .works-cards {
     margin: 0;
-  }
- 
-  .grid-1 {
-    background: url(./images/grid-1.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
- 
-  }
-
-  .grid-2 {
-   background: url(./images/grid-2.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-  }
-
-  .grid-3 {
-    background: url(./images/grid-3.png);
-  }
-
-  .grid-4 {
-    background: url(./images/grid-4.png);
-  }
-
-  .grid-5 {
-    background: url(./images/project-img.png);
-  }
-  
-  .grid-6 {
-    background: url(./images/grid-6.png);
-  }
-
-  .cards-btn {
-    display: none;
-  }
-
-.desktop-grid-btn {
-  height: 7.2vh;
-  width: 100%;
-  border: none;
-  background: #ff6b00;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  margin-bottom: -6px;
-  line-height: 24px;
-  letter-spacing: 0.03%;
-  text-align: center;
-  color: #fff;
-}
-
-
-  .desktop-h2 {
-    font-family: 'Crete Round', sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    letter-spacing: 0em;
-  
-  }
-
-  .desktop-p {
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
   }
 
   .about-details {
@@ -872,10 +786,6 @@ text-align: center;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
- }
-
- .contact br {
-   display: none;
  }
 
  form {
