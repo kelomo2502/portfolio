@@ -30,7 +30,8 @@ All you need to clone this on your local machine is any command-line interface l
 
 - GitHub: [@kelomo2502](https://github.com/kelomo2502)
 - Twitter: [@kelvin2502](https://twitter.com/kelvin2502)
-- LinkedIn: [LinkedIn](https://linkedin.com/in gbenga-oyewunmi)
+- LinkedIn: [LinkedIn](https://linkedin.com/ingbenga-oyewunmi)
+- Website: (https://kelomo2502.github.io/portfolio/)
 
 ## 🤝 Contributing
 
