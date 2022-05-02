@@ -220,6 +220,7 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* height: 60vh; */
   display: grid;
   grid-template-columns: 100%;
   margin: 0 24px;
