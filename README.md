@@ -1,6 +1,6 @@
 # MY Personal portfolio Project
 
-> This project is part of Module 1 Week 2 Microverse curriculum where we are working on making our portfolio. In this branch I have worked with my coding partner on building contact section and footer. I have also used formspree to collect users' input data. I have followed the design, color and template according to figma design
+> This project is part of Module 1 Week 2 Microverse curriculum where we learn how to create UIs adaptable to different screen sizes using media queries and template according to figma design
 
 ## Built With
 
@@ -30,7 +30,8 @@ All you need to clone this on your local machine is any command-line interface l
 
 - GitHub: [@kelomo2502](https://github.com/kelomo2502)
 - Twitter: [@kelvin2502](https://twitter.com/kelvin2502)
-- LinkedIn: [LinkedIn](https://linkedin.com/in gbenga-oyewunmi)
+- LinkedIn: [LinkedIn](https://linkedin.com/ingbenga-oyewunmi)
+- Website: (https://kelomo2502.github.io/portfolio/)
 
 ## 🤝 Contributing
 
