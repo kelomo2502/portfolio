@@ -121,7 +121,6 @@ h1 {
 .works h2 {
   display: grid;
   height: 25vh;
-  place-items: center;
   font-family: "Crete Round", sans-serif;
   font-size: 40px;
   font-weight: 400;
