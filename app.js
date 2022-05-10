@@ -10,15 +10,14 @@ function show() {
 
 function close() {
   mobileMenu.style.top = '-100%';
-    closeMenu.style.display = "none";
- 
+  closeMenu.style.display = 'none';
 }
 
-openMenu.addEventListener('click', show); 
-closeMenu.addEventListener('click', close);  
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
 
-document.querySelectorAll('.menu').forEach((menu) => { 
-  menu.addEventListener('click', () => { 
-    mobileMenu.style.display = 'none'; 
-  }); 
+document.querySelectorAll('.menu').forEach((menu) => {
+  menu.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+  });
 });
