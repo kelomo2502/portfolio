@@ -25,6 +25,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
     <div class="container">
@@ -32,14 +34,16 @@
         <header>
           <nav class="nav-bar wrap-items">
             <a href="#">Gbenga</a>
-            <img src="./images/Union.png" alt="harmburger" id="drop-menu" />
+            <div class="open-menu">
+              <img src="./images/Union.png" alt="hamburger">
+            </div>
             <ul class="nav-links">
-              <li><a href="#">Porfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#"><img src="./images/mail.png" alt="mail"></a></li>
+              <li><a href="#works" class="menu">Porfolio</a></li>
+              <li><a href="#about" class="menu">About</a></li>
+              <li><a href="#contact" class="menu">Contact</a></li>
             </ul>
           </nav>
+          <div class="close-menu"><img src="./images/close.png" alt="close"></div>
         </header>
       </div>
       <section class="introduction">
@@ -75,7 +79,7 @@
            </div>
       </section>
     </div>
-    <section class="works wrap-items" >
+    <section class="works wrap-items" id="works" >
          <div class="recent-works">
            <h2>My Recent Works</h2>
            <hr />
@@ -193,7 +197,7 @@
       </div>
     </div>
     </section>
-    <section class="about-me wrap-items">
+    <section class="about-me wrap-items" id="about">
       <div class="about-details">
         <h4>About me</h4>
         <p>
@@ -247,7 +251,7 @@
         </div>
       </div>
     </section>
-    <section class="contact wrap-items">
+    <section class="contact wrap-items" id="contact">
       <h6>
         I'm always <br />
         interested in hearing about new projects, so if you'd like to chat
@@ -273,5 +277,6 @@
             <li><a href="#"><img src="./images/medium-new.png" alt="medium"></a></li>
           </ul>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
