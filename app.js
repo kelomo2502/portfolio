@@ -13,3 +13,6 @@ function close() {
     closeMenu.style.display = "none";
  
 }
+
+openMenu.addEventListener('click', show); 
+closeMenu.addEventListener('click', close);  
