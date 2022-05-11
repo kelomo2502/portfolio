@@ -462,7 +462,8 @@ form {
 }
 
 footer {
-  height: 20vh;
+  height: 15vh;
+  width: 375px;
 }
 
 .footer-socials {
@@ -474,7 +475,13 @@ footer {
 
 .footer-socials li {
   list-style-type: none;
-  padding: 25px 10px;
+  padding: 25px 10px 10px 0;
+}
+
+.home-icon {
+  display: block;
+  height: 25px;
+  margin: 0 auto;
 }
 
 .cards-btn:enabled {
@@ -525,13 +532,13 @@ footer {
     display: none;
     position: fixed;
     flex-direction: column;
-    height: 100vh;
+    height: 93vh;
     top: 0;
     right: 0;
     left: 0;
     z-index: 2;
     background: #3c3a39;
-    opacity: 0.9;
+    opacity: 1;
     padding: 60px 0 0 20px;
     transition: 0.7s ease-in-out;
   }
