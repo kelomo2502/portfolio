@@ -128,6 +128,7 @@ h1 {
   line-height: 52px;
   letter-spacing: 0;
   padding-top: 15vh;
+  padding-left:24px;
 }
 
 .works hr {
@@ -462,7 +463,7 @@ form {
 }
 
 footer {
-  height: 15vh;
+  height: 10vh;
 }
 
 .footer-socials {
@@ -477,13 +478,6 @@ footer {
   padding: 25px 10px 10px 0;
 }
 
-.home-icon {
-  display: block;
-  height: 25px;
-  margin: 0 auto;
-  width: 100%;
- 
-}
 
 .cards-btn:enabled {
   background: #ff6b00;
@@ -533,31 +527,64 @@ footer {
     display: none;
     position: fixed;
     flex-direction: column;
-    height: 93vh;
+    height: 100vh;
     top: 0;
     right: 0;
     left: 0;
     z-index: 2;
-    background: #3c3a39;
+    background: #fff;
     opacity: 1;
-    padding: 60px 0 0 20px;
     transition: 0.7s ease-in-out;
-  }
+    align-items: center;
+  } 
 
   .nav-links li {
     list-style-type: none;
     cursor: pointer;
+    width: 100%;
+    background: #3c3a39;
+
   }
+  .portfolio-toggle {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 15%;
+    padding-top:20%;
+  }
+
+  .about-toggle {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 15%;
+  }
+
+  .contact-toggle {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    // height: 60%;
+    height: 45%;
+  }
+
+  .home-icon {
+  display: block;
+  height: 25px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 20px;
+ 
+}
 
   .nav-links li a {
     display: inline-block;
-    padding: 4px;
     font-size: 32px;
     color: #fff5e1;
     font-weight: 700;
     line-height: 44px;
     margin: 10px 0 0;
-    padding-top: 30px;
+    padding: 30px 4px 4px 24px;
   }
 }
 
@@ -613,6 +640,7 @@ footer {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 20px;
+   
   }
 
   .nav-links {
@@ -892,7 +920,5 @@ footer {
     height: unset;
   }
 
-  .home-icon {
-    display: none;
-  }
+
 }
