@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   padding: 0;
   margin: 0;
@@ -54,7 +56,7 @@ h1 {
 
 .my-name {
   color: #ff6b00;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -71,7 +73,7 @@ h1 {
   color: #fff5e1;
   font-weight: 700;
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 32px;
   height: 8vh;
   display: flex;
@@ -84,7 +86,7 @@ h1 {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 24px;
   height: 20vh;
   display: flex;
@@ -128,7 +130,7 @@ h1 {
   line-height: 52px;
   letter-spacing: 0;
   padding-top: 15vh;
-  padding-left:24px;
+  padding-left: 24px;
 }
 
 .works hr {
@@ -156,7 +158,7 @@ h1 {
 }
 
 .posts-container h3 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
@@ -165,7 +167,7 @@ h1 {
 }
 
 .posts-container p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -228,9 +230,7 @@ h1 {
 
 .works-cards h2 {
   color: #fff;
-  font-family:
-    'Crete Round',
-    sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
@@ -241,7 +241,7 @@ h1 {
 }
 
 .works-cards p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -364,9 +364,7 @@ h1 {
 }
 
 .technologies span {
-  font-family:
-    "InaiMathi",
-    sans-serif;
+  font-family: "InaiMathi", sans-serif;
   font-weight: 700;
   font-size: 32px;
   margin: 0 12px;
@@ -408,7 +406,7 @@ h1 {
 }
 
 .contact h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   color: #172b40;
@@ -420,9 +418,7 @@ h1 {
   width: 100%;
   border: none;
   padding: 14px 10px;
-  font-family:
-    'Inter',
-    sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #979493;
 }
@@ -439,7 +435,7 @@ h1 {
 }
 
 .form-btn {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 700;
   color: #fff;
@@ -477,8 +473,6 @@ footer {
   list-style-type: none;
   padding: 25px 10px 10px 0;
 }
-
-
 .cards-btn:enabled {
   background: #ff6b00;
   color: #fff;
@@ -536,21 +530,21 @@ footer {
     opacity: 1;
     transition: 0.7s ease-in-out;
     align-items: center;
-  } 
+  }
 
   .nav-links li {
     list-style-type: none;
     cursor: pointer;
     width: 100%;
     background: #3c3a39;
-
   }
+
   .portfolio-toggle {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     height: 15%;
-    padding-top:20%;
+    padding-top: 20%;
   }
 
   .about-toggle {
@@ -564,17 +558,17 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 45%;
+    height: 57%;
   }
 
- li .home-icon {
-  display: block;
-  height: 35px;
-  margin: 27px auto 0  auto;
-  width: 100%;
-  margin-top: 20px;
-  background: #fff; 
-}
+  li .home-icon {
+    display: block;
+    height: 35px;
+    margin: 27px auto 0 auto;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+  }
 
   .nav-links li a {
     display: inline-block;
@@ -601,6 +595,10 @@ footer {
   }
 
   .close-menu {
+    display: none;
+  }
+
+  li.home-icon {
     display: none;
   }
 
@@ -639,7 +637,6 @@ footer {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 20px;
-   
   }
 
   .nav-links {
@@ -742,7 +739,7 @@ footer {
 
   .see-works {
     width: 11.3vw;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -757,7 +754,7 @@ footer {
   }
 
   .posts-container p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -765,7 +762,7 @@ footer {
   }
 
   .posts-container h3 {
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 52px;
@@ -774,7 +771,7 @@ footer {
   }
 
   .works-btn {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
@@ -815,7 +812,7 @@ footer {
   }
 
   .about-details h4 {
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-size: 72px;
     font-weight: 400;
     line-height: 82px;
@@ -823,7 +820,7 @@ footer {
   }
 
   .about-details p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -851,7 +848,7 @@ footer {
 
   .technologies ul {
     align-items: unset;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 43px;
@@ -859,7 +856,7 @@ footer {
   }
 
   .technologies span {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
@@ -881,7 +878,7 @@ footer {
   .contact h6 {
     width: 35%;
     text-align: left;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
@@ -893,7 +890,7 @@ footer {
 
   .form-btn {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
@@ -902,14 +899,14 @@ footer {
   }
 
   .contact form > input {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
   }
 
   .contact form > textarea {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
