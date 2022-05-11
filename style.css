@@ -463,7 +463,6 @@ form {
 
 footer {
   height: 15vh;
-  width: 375px;
 }
 
 .footer-socials {
@@ -482,6 +481,8 @@ footer {
   display: block;
   height: 25px;
   margin: 0 auto;
+  width: 100%;
+ 
 }
 
 .cards-btn:enabled {
@@ -889,5 +890,9 @@ footer {
 
   .footer {
     height: unset;
+  }
+
+  .home-icon {
+    display: none;
   }
 }
