@@ -559,7 +559,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 57%;
+    height: 45%;
   }
 
   li .home-icon {
