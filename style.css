@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   padding: 0;
   margin: 0;
@@ -537,6 +539,7 @@ footer {
     width: 100%;
     background: #3c3a39;
   }
+
   .portfolio-toggle {
     display: flex;
     justify-content: flex-end;
@@ -556,16 +559,16 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    // height: 60%;
-    height: 45%;
+    height: 57%;
   }
 
-  .home-icon {
+  li .home-icon {
     display: block;
-    height: 25px;
-    margin: 0 auto;
+    height: 35px;
+    margin: 27px auto 0 auto;
     width: 100%;
     margin-top: 20px;
+    background: #fff;
   }
 
   .nav-links li a {
@@ -593,6 +596,10 @@ footer {
   }
 
   .close-menu {
+    display: none;
+  }
+
+  li.home-icon {
     display: none;
   }
 
