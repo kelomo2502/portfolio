@@ -473,6 +473,7 @@ footer {
   list-style-type: none;
   padding: 25px 10px 10px 0;
 }
+
 .cards-btn:enabled {
   background: #ff6b00;
   color: #fff;
