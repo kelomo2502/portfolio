@@ -538,6 +538,8 @@ footer {
     cursor: pointer;
     width: 100%;
     background: #3c3a39;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .portfolio-toggle {
@@ -545,7 +547,7 @@ footer {
     justify-content: flex-end;
     flex-direction: column;
     height: 15%;
-    padding-top: 20%;
+    padding-top: 6.75rem;
   }
 
   .about-toggle {
@@ -559,16 +561,26 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 45%;
+    height: 15%;
+    padding-bottom: 78%;
   }
 
-  li .home-icon {
+  .menu {
+    border-bottom: 1px thin #6f6c6b;
+  }
+
+  .home-icon {
     display: block;
     height: 35px;
     margin: 27px auto 0 auto;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0 !important;
     background: #fff;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: #fff;
+    height: 10px;
+    position: relative;
   }
 
   .nav-links li a {
@@ -578,7 +590,8 @@ footer {
     font-weight: 700;
     line-height: 44px;
     margin: 10px 0 0;
-    padding: 30px 4px 4px 24px;
+    padding: 30px 4px 4px 0;
+    border-bottom: 1px solid lightgray;
   }
 }
 
@@ -599,7 +612,7 @@ footer {
     display: none;
   }
 
-  li.home-icon {
+  .home-icon {
     display: none;
   }
 
