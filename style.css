@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   padding: 0;
   margin: 0;
@@ -45,6 +47,7 @@ body {
 
 .nav-bar img {
   height: 15px;
+  cursor: pointer;
 }
 
 h1 {
@@ -53,7 +56,7 @@ h1 {
 
 .my-name {
   color: #ff6b00;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -70,7 +73,7 @@ h1 {
   color: #fff5e1;
   font-weight: 700;
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 32px;
   height: 8vh;
   display: flex;
@@ -83,7 +86,7 @@ h1 {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 24px;
   height: 20vh;
   display: flex;
@@ -127,6 +130,7 @@ h1 {
   line-height: 52px;
   letter-spacing: 0;
   padding-top: 15vh;
+  padding-left: 24px;
 }
 
 .works hr {
@@ -154,7 +158,7 @@ h1 {
 }
 
 .posts-container h3 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
@@ -163,7 +167,7 @@ h1 {
 }
 
 .posts-container p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -226,9 +230,7 @@ h1 {
 
 .works-cards h2 {
   color: #fff;
-  font-family:
-    'Crete Round',
-    sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
@@ -239,7 +241,7 @@ h1 {
 }
 
 .works-cards p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -362,9 +364,7 @@ h1 {
 }
 
 .technologies span {
-  font-family:
-    "InaiMathi",
-    sans-serif;
+  font-family: "InaiMathi", sans-serif;
   font-weight: 700;
   font-size: 32px;
   margin: 0 12px;
@@ -406,7 +406,7 @@ h1 {
 }
 
 .contact h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   color: #172b40;
@@ -418,9 +418,7 @@ h1 {
   width: 100%;
   border: none;
   padding: 14px 10px;
-  font-family:
-    'Inter',
-    sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #979493;
 }
@@ -437,7 +435,7 @@ h1 {
 }
 
 .form-btn {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 700;
   color: #fff;
@@ -446,6 +444,7 @@ h1 {
   height: 48px;
   border: none;
   display: block;
+  margin: 0 auto;
 }
 
 form {
@@ -460,7 +459,7 @@ form {
 }
 
 footer {
-  height: 20vh;
+  height: 10vh;
 }
 
 .footer-socials {
@@ -472,7 +471,7 @@ footer {
 
 .footer-socials li {
   list-style-type: none;
-  padding: 25px 10px;
+  padding: 25px 10px 10px 0;
 }
 
 .cards-btn:enabled {
@@ -499,12 +498,121 @@ footer {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .open-menu {
+    display: block;
+    top: 50px;
+    right: 20px;
+    color: #6070ff;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+  .close-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 2;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+    align-items: center;
+  }
+
+  .nav-links li {
+    list-style-type: none;
+    cursor: pointer;
+    width: 100%;
+    background: #3c3a39;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .portfolio-toggle {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 15%;
+    padding-top: 6.75rem;
+  }
+
+  .about-toggle {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 15%;
+  }
+
+  .contact-toggle {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 15%;
+    padding-bottom: 78%;
+  }
+
+  .menu {
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  .home-icon {
+    display: block;
+    margin: 27px auto 0 auto;
+    width: 100%;
+    margin-top: 0 !important;
+    background: #fff;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: #fff;
+    height: 10px;
+    position: relative;
+  }
+
+  .nav-links li a {
+    display: inline-block;
+    font-size: 32px;
+    color: #fff5e1;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 10px 0 0;
+    padding: 30px 4px 4px 0;
+    border-bottom: 1px solid lightgray;
+  }
+}
+
 @media screen and (min-width: 768px) {
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+  }
+
+  .open-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .home-icon {
+    display: none;
   }
 
   body {
@@ -644,7 +752,7 @@ footer {
 
   .see-works {
     width: 11.3vw;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -659,7 +767,7 @@ footer {
   }
 
   .posts-container p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -667,7 +775,7 @@ footer {
   }
 
   .posts-container h3 {
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 52px;
@@ -676,7 +784,7 @@ footer {
   }
 
   .works-btn {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
@@ -717,7 +825,7 @@ footer {
   }
 
   .about-details h4 {
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-size: 72px;
     font-weight: 400;
     line-height: 82px;
@@ -725,7 +833,7 @@ footer {
   }
 
   .about-details p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -753,7 +861,7 @@ footer {
 
   .technologies ul {
     align-items: unset;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 43px;
@@ -761,7 +869,7 @@ footer {
   }
 
   .technologies span {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
@@ -783,7 +891,7 @@ footer {
   .contact h6 {
     width: 35%;
     text-align: left;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
@@ -795,7 +903,7 @@ footer {
 
   .form-btn {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
@@ -804,14 +912,14 @@ footer {
   }
 
   .contact form > input {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
   }
 
   .contact form > textarea {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
