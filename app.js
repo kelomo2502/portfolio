@@ -10,3 +10,5 @@ const close = () => {
   mobileMenu.style.top = '-100%';
   closeMenu.style.display = 'none';
 };
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
