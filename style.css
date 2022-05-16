@@ -507,7 +507,17 @@ footer {
     margin-right: 5px; 
     font-size: 20px; 
   }
-  
+
+  .close-menu { 
+    display: none; 
+    position: absolute; 
+    top: 20px; 
+    right: 25px; 
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    z-index: 2; 
+  } 
+
   .nav-links li {
     list-style-type: none;
     cursor: pointer;
