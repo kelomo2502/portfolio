@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 155px;
+  margin-bottom: 10px;
+}
+
+.modal-header .modal-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .modal-title h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+}
+.modal-image {
+  width: 100%;
+}
+
+.modal-header .modal-tech-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.modal-header .modal-tech-list li {
+  list-style-type: none;
+  object-fit: contain;
+}
+
+.modal-header .modal-tech-list button {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  padding: 5px 10px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+}
+
+.modal-image img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.modal-title .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modal-footer .modal-footer-btn {
+  display: flex;
+  height: 48px;
+  padding: 12px;
+  background: #ff6b00;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  outline: none;
+}
+
+.modal-footer .modal-footer-btn span {
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+}
+
+.modal {
+  position: fixed;
+  top: 60px;
+  left: 16px;
+  bottom: 24px;
+  right: 16px;
+  transform: translate(0, 0) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: #fff;
+  padding: 24px;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.modal.active {
+  transform: translate(0, 0) scale(1);
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}

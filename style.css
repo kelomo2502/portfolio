@@ -213,7 +213,7 @@ h1 {
   border: 1px solid #ff6b00;
   padding: 13px;
   margin-top: 2vh;
-  width: 35vw;
+  width: 35vw !important;
   cursor: pointer;
   margin-bottom: 24px;
 }
@@ -751,7 +751,6 @@ footer {
   }
 
   .see-works {
-    width: 11.3vw;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 700;
