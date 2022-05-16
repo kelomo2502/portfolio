@@ -499,39 +499,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .open-menu {
-    display: block;
-    top: 50px;
-    right: 20px;
-    color: #6070ff;
-    margin-right: 5px;
-    font-size: 20px;
-  }
-
-  .close-menu {
-    display: none;
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    z-index: 2;
-  }
-
-  .nav-links {
-    display: none;
-    position: fixed;
-    flex-direction: column;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
-    background: #fff;
-    opacity: 1;
-    transition: 0.7s ease-in-out;
-    align-items: center;
-  }
+  /* STYLES FOR OPEN AND CLOSE BUTTONS */
 
   .nav-links li {
     list-style-type: none;
