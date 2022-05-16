@@ -606,7 +606,7 @@ footer {
   }
 
   .close-menu {
-    display: none;
+    display: none !important;
   }
 
   .home-icon {
