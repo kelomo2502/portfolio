@@ -12,9 +12,9 @@ const close = () => {
 };
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
-
 document.querySelectorAll('.menu').forEach((menu) => {
   menu.addEventListener('click', () => {
     mobileMenu.style.display = 'none';
+    closeMenu.style.display = 'none';
   });
 });
