@@ -527,6 +527,21 @@ footer {
     padding-right: 24px;
   }
 
+  .nav-links { 
+    display: none; 
+    position: fixed; 
+    flex-direction: column; 
+    height: 100vh; 
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    z-index: 2; 
+    background: #fff; 
+    opacity: 1; 
+    transition: 0.7s ease-in-out; 
+    align-items: center; 
+  }
+
   .portfolio-toggle {
     display: flex;
     justify-content: flex-end;
