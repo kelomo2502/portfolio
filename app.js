@@ -6,3 +6,7 @@ const show = () => {
   mobileMenu.style.top = '0';
   closeMenu.style.display = 'block';
 };
+const close = () => {
+  mobileMenu.style.top = '-100%';
+  closeMenu.style.display = 'none';
+};
