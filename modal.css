@@ -116,21 +116,21 @@
 
 .modal {
   position: fixed;
-  top: 60px;
-  left: 16px;
-  bottom: 24px;
-  right: 16px;
-  transform: translate(0, 0) scale(0);
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(5%, 0) scale(0);
   transition: 200ms ease-in-out;
   z-index: 10;
   background-color: #fff;
-  padding: 24px;
-  min-height: 100vh;
-  overflow-y: auto;
+  width: 90%;
+  overflow-y: scroll;
+  padding: 16px;
 }
 
 .modal.active {
-  transform: translate(0, 0) scale(1);
+  transform: translate(5%, 0) scale(1);
 }
 
 #overlay.active {
@@ -147,4 +147,37 @@
   transition: 200ms ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-header {
+    justify-content: unset;
+    gap: 7px;
+  }
+
+  .desktop-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .modal-image {
+    width: 55%;
+  }
+
+  .modal-image img {
+    width: 100%;
+  }
+
+  .modal-body-footer {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .modal-footer {
+    justify-content: flex-start;
+    gap: 5px;
+  }
 }

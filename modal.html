@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <section>
+      <div class="modal active" id="modal">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h4>Multi-Post Stories</h4>
+            <button class="close-button">&times;</button>
+          </div>
+          <ul class="modal-tech-list">
+            <li><button>html</button></li>
+            <li><button>bootstrap</button></li>
+            <li><button>Ruby on Rails</button></li>
+          </ul>
+        </div>
+        <div class="modal-image">
+          <img src="./images/recent-works.png" alt="project image" />
+        </div>
+        <div class="modal-body">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essent
+        </div>
+        <div class="modal-footer">
+          <button class="modal-footer-btn">
+            <span>See Live</span>
+            <img src="./modal-images/see-live.png" alt="see-live icon" />
+          </button>
+          <button class="modal-footer-btn">
+            <span>See Source</span
+            ><img src="./modal-images/github.png" alt="github icon" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <div id="overlay" class="overlay active"></div>
+
+    <script src="modal.js"></script>
+  </body>
+</html>

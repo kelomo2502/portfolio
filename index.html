@@ -114,21 +114,26 @@
       <div class="works-flex">
         <img src="./images/recent-works.png" alt="work-card" />
         <div class="posts-container">
-          <h3>Multi-Post Stories</h3>
-          <p>
+          <h3 class="name">Multi-Post Stories</h3>
+          <p class="description">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard dummy text ever
             since the 1500s, when an unknown printer took a standard dummy text.
           </p>
           <div class="works-tools">
-            <ul class="works-btn">
+            <ul class="works-btn technogy-modal">
               <li><button type="button">css</button></li>
               <li><button type="button">html</button></li>
               <li><button type="button">bootstrap</button></li>
               <li><button type="button">Ruby</button></li>
             </ul>
           </div>
-          <button class="see-works cards-btn" type="button" id="multipost-btn">
+          <button
+            data-modal-target="#modal"
+            class="see-works cards-btn"
+            type="button"
+            id="multipost-btn"
+          >
             See Project
           </button>
         </div>
@@ -137,114 +142,126 @@
       <br />
       <div class="works-cards-container">
         <div class="works-cards">
-          <h2>
+          <h2 class="name">
             Profesional Art <br />
             Printing Data
           </h2>
-          <p>
+          <p class="description">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
           <div class="works-btn-list">
-            <ul class="works-card-btn">
+            <ul class="works-card-btn technogy-modal">
               <li><button type="button">html</button></li>
               <li><button type="button">bootstrap</button></li>
               <li><button type="button">Ruby</button></li>
             </ul>
-            <button type="button" class="cards-btn">See Project</button>
+            <button data-modal-target="#modal" type="button" class="cards-btn">
+              See Project
+            </button>
           </div>
         </div>
 
         <div class="works-cards">
-          <h2>
+          <h2 class="name">
             Profesional Art <br />
             Printing Data
           </h2>
-          <p>
+          <p class="description">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
 
           <div class="works-btn-list">
-            <ul class="works-card-btn">
+            <ul class="works-card-btn technogy-modal">
               <li><button type="button">html</button></li>
               <li><button type="button">bootstrap</button></li>
               <li><button type="button">Ruby</button></li>
             </ul>
           </div>
-          <button type="button" class="cards-btn">See Project</button>
+          <button data-modal-target="#modal" type="button" class="cards-btn">
+            See Project
+          </button>
         </div>
         <div class="works-cards">
-          <h2>
+          <h2 class="name">
             Profesional Art <br />
             Printing Data
           </h2>
-          <p>
+          <p class="description">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
           <div class="works-btn-list">
-            <ul class="works-card-btn">
+            <ul class="works-card-btn technogy-modal">
               <li><button type="button">html</button></li>
               <li><button type="button">bootstrap</button></li>
               <li><button type="button">Ruby</button></li>
             </ul>
           </div>
-          <button type="button" class="cards-btn">See Project</button>
+          <button data-modal-target="#modal" type="button" class="cards-btn">
+            See Project
+          </button>
         </div>
         <div class="works-cards">
-          <h2>
+          <h2 class="name">
             Profesional Art <br />
             Printing Data
           </h2>
-          <p>
+          <p class="description">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
           <div class="works-btn-list">
-            <ul class="works-card-btn">
+            <ul class="works-card-btn technogy-modal">
               <li><button type="button">html</button></li>
               <li><button type="button">bootstrap</button></li>
               <li><button type="button">Ruby</button></li>
             </ul>
           </div>
-          <button type="button" class="cards-btn">See Project</button>
+          <button data-modal-target="#modal" type="button" class="cards-btn">
+            See Project
+          </button>
         </div>
         <div class="works-cards">
-          <h2>
+          <h2 class="name">
             Profesional Art <br />
             Printing Data
           </h2>
-          <p>
+          <p class="description">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
           <div class="works-btn-list">
-            <ul class="works-card-btn">
+            <ul class="works-card-btn technogy-modal">
               <li><button type="button">html</button></li>
               <li><button type="button">bootstrap</button></li>
               <li><button type="button">Ruby</button></li>
             </ul>
           </div>
-          <button type="button" class="cards-btn">See Project</button>
+          <button data-modal-target="#modal" type="button" class="cards-btn">
+            See Project
+          </button>
         </div>
         <div class="works-cards">
-          <h2>
+          <h2 class="name">
             Profesional Art <br />
             Printing Data
           </h2>
-          <p>
+          <p class="description">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
           <div class="works-btn-list">
-            <ul class="works-card-btn">
+            <ul class="works-card-btn technogy-modal">
               <li><button type="button">html</button></li>
               <li><button type="button">bootstrap</button></li>
               <li><button type="button">Ruby</button></li>
             </ul>
           </div>
-          <button type="button" class="cards-btn">See Project</button>
+          <button data-modal-target="#modal" type="button" class="cards-btn">
+            See Project
+          </button>
         </div>
       </div>
     </section>
@@ -356,40 +373,52 @@
         <div class="modal-header">
           <div class="modal-title">
             <h4>Multi-Post Stories</h4>
-            <button class="close-button">&times;</button>
+            <button data-close-button class="close-button">&times;</button>
           </div>
           <ul class="modal-tech-list">
-            <li><button>html</button></li>
-            <li><button>bootstrap</button></li>
-            <li><button>Ruby on Rails</button></li>
+            <li class="modal-tech-lists"><button>html</button></li>
+            <li class="modal-tech-lists"><button>bootstrap</button></li>
+            <li class="modal-tech-lists"><button>Ruby on Rails</button></li>
           </ul>
         </div>
-        <div class="modal-image">
-          <img src="./modal-images/modal-portfolio.png" alt="project image" />
-        </div>
-        <div class="modal-body">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essent
-        </div>
-        <div class="modal-footer">
-          <button class="modal-footer-btn">
-            <span>See Live</span>
-            <img src="./modal-images/see-live.png" alt="see-live icon" />
-          </button>
-          <button class="modal-footer-btn">
-            <span>See Source</span
-            ><img src="./modal-images/github.png" alt="github icon" />
-          </button>
+
+        <div class="desktop-modal">
+          <div class="modal-image">
+            <img src="./images/recent-works.png" alt="project image" />
+          </div>
+          <div class="modal-body-footer">
+            <p class="modal-body">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
+            <div class="modal-footer">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="see-live"
+                >see live<img src="./modal-images/see-live.png" alt=""
+              /></a>
+
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="see-source"
+                >see Source<img
+                  src="./modal-images/github.png"
+                  alt="github icon"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <div id="overlay" class="overlay"></div>
-
     <script src="app.js"></script>
-    <script src="modal.js"></script>
   </body>
 </html>
