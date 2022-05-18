@@ -24,34 +24,34 @@ document.querySelectorAll('.menu').forEach((menu) => {
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
-  })
-});
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active');
-  modals.forEach(modal => {
-    closeModal(modal);
-  })
-})
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal');
-    closeModal(modal);
-  })
-});
-function openModal (modal) {
-  if (modal == null) return
+function openModal(modal) {
+  if (modal == null) return;
   modal.classList.add('active');
   overlay.classList.add('active');
 }
-function closeModal (modal) {
-  if (modal == null) return
+function closeModal(modal) {
+  if (modal == null) return;
   modal.classList.remove('active');
   overlay.classList.remove('active');
 }
+openModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
+closeModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
 const projects = [
   {
     name: 'Multi-Post Stories',
@@ -63,7 +63,7 @@ const projects = [
     liveVersion: 'https://kelomo2502.github.io/portfolio/',
     sourceCode: 'https://github.com/kelomo2502/portfolio',
   },
-   {
+  {
     name: 'Professional Art Printing Data',
     description: ` A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard`,
@@ -71,33 +71,28 @@ const projects = [
     technology: ['html', 'bootstrap', 'Ruby on Rails'],
     liveVersion: 'https://kelomo2502.github.io/portfolio/',
     sourceCode: 'https://github.com/kelomo2502/portfolio',
-  }
-
+  },
 ];
-
 const seeProjectBtn = document.querySelectorAll('.cards-btn');
 seeProjectBtn.forEach((button, i) => {
   button.addEventListener('click', () => {
-  const modalMenu = document.querySelector('.modal');
-  const project = projects[i];
-  const title = modalMenu.querySelector('.modal h4');
-  title.textContent = project.name;
-  const description = modalMenu.querySelector('.modal-body');
-  description.textContent = project.description;
-  const projectImage = modalMenu.querySelector('.modal img');
-  projectImage.src = project.featuredImage;
-  const liveLink = modalMenu.querySelector('.modal-footer .see-live');
-  liveLink.href = project.liveVersion;
-const seeSource = modalMenu.querySelector('.modal-footer .see-source');
-  seeSource.href = project.sourceCode;
-  const techs = modalMenu.querySelectorAll('.modal-tech-lists');
-  techs.forEach((tech, idx) => {
-    tech.innerHTML = project.technology[idx];
-  });
+    const modalMenu = document.querySelector('.modal');
+    const project = projects[i];
+    const title = modalMenu.querySelector('.modal h4');
+    title.textContent = project.name;
+    const description = modalMenu.querySelector('.modal-body');
+    description.textContent = project.description;
+    const projectImage = modalMenu.querySelector('.modal img');
+    projectImage.src = project.featuredImage;
+    const liveLink = modalMenu.querySelector('.modal-footer .see-live');
+    liveLink.href = project.liveVersion;
+    const seeSource = modalMenu.querySelector('.modal-footer .see-source');
+    seeSource.href = project.sourceCode;
+    const techs = modalMenu.querySelectorAll('.modal-tech-lists');
+    techs.forEach((tech, idx) => {
+      tech.innerHTML = project.technology[idx];
+    });
 
-modalMenu.classList.add('active')
+    modalMenu.classList.add('active');
   });
 });
-
-
-
