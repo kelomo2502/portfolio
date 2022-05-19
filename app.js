@@ -107,3 +107,4 @@ form.addEventListener('submit', (e) => {
   }
 });
 // LOCAL STORAGE
+let formInfo = {};
