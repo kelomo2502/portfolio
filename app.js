@@ -108,3 +108,10 @@ form.addEventListener('submit', (e) => {
 });
 // LOCAL STORAGE
 let formInfo = {};
+function addToLocalStorage() {
+  formInfo = {
+    fullName: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+  };
+};
