@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.error-msg {
+  display: none;
+  color: #ff6b00;
+  background: #e6ebed;
+  border-radius: 15px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-header {
   display: flex;
   flex-direction: column;
