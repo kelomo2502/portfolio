@@ -106,3 +106,4 @@ form.addEventListener('submit', (e) => {
     errorMessage.style.display = 'flex';
   }
 });
+// LOCAL STORAGE
