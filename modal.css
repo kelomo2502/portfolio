@@ -8,10 +8,16 @@
   display: none;
   color: #ff6b00;
   background: #e6ebed;
-  border-radius: 15px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 8px;
   justify-content: center;
   align-items: center;
+  font-family: Roboto, sans-serif;
+}
+
+.error-msg img {
+  width:30px;
+  height:30px;
 }
 
 .modal-header {

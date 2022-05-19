@@ -97,4 +97,12 @@ seeProjectBtn.forEach((button, i) => {
   });
 });
 
-const form=document.querySelector('#form');
+const form=document.querySelector('#my-form');
+form.addEventListener('submit', (e)=>{
+    const email=document.querySelector('#email').value;
+    const errorMessage=document.querySelector('.error-msg');
+if (email!== email.toLowerCase()) {
+e.preventDefault();
+errorMessage.style.display='flex';
+}  
+});
