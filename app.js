@@ -116,7 +116,7 @@ function addToLocalStorage() {
   };
 
   localStorage.setItem('FORM_DATA', JSON.stringify(formInfo));
-};
+}
 function getFromLocalStorage() {
   let data = localStorage.getItem('FORM_DATA');
 
@@ -125,8 +125,8 @@ function getFromLocalStorage() {
     form.name.value = data.fullName;
     form.email.value = data.email;
     form.message.value = data.message;
-  };
-};
+  }
+}
 window.onload = () => {
   form.name.addEventListener('input', addToLocalStorage);
   form.email.addEventListener('input', addToLocalStorage);
@@ -134,5 +134,3 @@ window.onload = () => {
 
   getFromLocalStorage();
 };
-
-
