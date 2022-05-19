@@ -21,8 +21,8 @@
 }
 
 .modal-header {
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
   justify-content: space-between;
   min-height: 155px;
   margin-bottom: 10px;
