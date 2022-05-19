@@ -326,9 +326,9 @@
         please get in touch.
       </h6>
       <form action="https://formspree.io/f/mbjwpdnp" method="post" id="my-form">
-        <input type="text" placeholder="Full name" maxlength="30" required />
+        <input type="text" name="name" placeholder="Full name" maxlength="30" required />
         <hr class="upper-hr" />
-        <input type="email" id="email" placeholder="Email address" required />
+        <input type="email" id="email" name="email" placeholder="Email address" required />
         <hr />
         <textarea
           name="message"
@@ -344,7 +344,7 @@
           Get in touch
         </button>
         <div class="error-msg">
-          <img src="modal-images/alarm-icon.png" alt="">
+          <img src="modal-images/alarm-icon.png" alt="error icon">
           <p>
             Message not sent:Email must be in lowercase
           </p>
