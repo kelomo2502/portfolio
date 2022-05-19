@@ -146,4 +146,15 @@ function addToLocalStorage() {
   };
 
   localStorage.setItem('FORM_DATA', JSON.stringify(formInfo));
-}
+};
+function getFromLocalStorage() {
+  let data = localStorage.getItem('FORM_DATA');
+
+  if (data) {
+    data = JSON.parse(data);
+    form.name.value = data.name;
+    form.email.value = data.email;
+    form.message.value = data.message;
+  };
+};
+
