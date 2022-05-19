@@ -96,3 +96,5 @@ seeProjectBtn.forEach((button, i) => {
     modalMenu.classList.add('active');
   });
 });
+
+const form=document.querySelector('#form');
