@@ -157,4 +157,12 @@ function getFromLocalStorage() {
     form.message.value = data.message;
   };
 };
+window.onload = () => {
+  form.name.addEventListener('input', addToLocalStorage);
+  form.email.addEventListener('input', addToLocalStorage);
+  form.message.addEventListener('input', addToLocalStorage);
+
+  getFromLocalStorage();
+};
+
 
