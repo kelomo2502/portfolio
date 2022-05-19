@@ -16,31 +16,31 @@
 }
 
 .error-msg img {
-  width:30px;
-  height:30px;
+  width: 30px;
+  height: 30px;
 }
 
 .modal-header {
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 155px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .modal-header .modal-title {
   display: flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .modal-header .modal-title h4 {
-  font-family:"Roboto", sans-serif;
-  font-size:32px;
-  font-weight:700;
-  line-height:44px;
-  text-align:left;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
 }
 
 .modal-image {
