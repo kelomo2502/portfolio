@@ -107,11 +107,34 @@ form.addEventListener('submit', (e) => {
   }
 });
 // LOCAL STORAGE
+// let formInfo = {};
+// function addToLocalStorage() {
+//   formInfo = {
+//     fullName: form.name.value,
+//     email: form.email.value,
+//     message: form.message.value,
+//   };
+
+//   localStorage.setItem('FORM_DATA', JSON.stringify(formInfo));
+// }
+
+// function getFromLocalStorage() {
+//   let data = localStorage.getItem('FORM_DATA');
+
+//   if (data) {
+//     data = JSON.parse(data);
+//     form.name.value = data.name;
+//     form.email.value = data.email;
+//     form.message.value = data.message;
+//   }
+// }
+
+// window.onload = () => {
+//   form.name.addEventListener('input', addToLocalStorage);
+//   form.email.addEventListener('input', addToLocalStorage);
+//   form.message.addEventListener('input', addToLocalStorage);
+
+//   getFromLocalStorage();
+// };
+
 let formInfo = {};
-function addToLocalStorage() {
-  formInfo = {
-    fullName: form.name.value,
-    email: form.email.value,
-    message: form.message.value,
-  };
-};
