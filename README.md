@@ -37,7 +37,7 @@ All you need to clone this on your local machine is any command-line interface l
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/kelomo2502/portfolio/issues).
 
 ## Show your support
 
