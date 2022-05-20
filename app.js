@@ -102,6 +102,12 @@ const projects = [
     sourceCode: 'https://github.com/kelomo2502/portfolio',
   }
 ];
+const seeProjectBtn = document.querySelectorAll('.cards-btn');
+seeProjectBtn.forEach((button, i) => {
+  button.addEventListener('click', () => {
+    const project = projects[i];
+    const modalBody = document.querySelector('.popup-modal')
+
 
     modalBody.innerHTML = `
     <div class="modal" id="modal">
