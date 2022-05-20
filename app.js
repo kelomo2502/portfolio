@@ -1,101 +1,100 @@
 //  harmburger toggle
-const openMenu = document.querySelector('.open-menu');
-const mobileMenu = document.querySelector('.nav-links');
-const closeMenu = document.querySelector('.close-menu');
+const openMenu = document.querySelector(".open-menu");
+const mobileMenu = document.querySelector(".nav-links");
+const closeMenu = document.querySelector(".close-menu");
 const show = () => {
-  mobileMenu.style.display = 'flex';
-  mobileMenu.style.top = '0';
-  closeMenu.style.display = 'block';
+  mobileMenu.style.display = "flex";
+  mobileMenu.style.top = "0";
+  closeMenu.style.display = "block";
 };
 const close = () => {
-  mobileMenu.style.top = '-100%';
-  closeMenu.style.display = 'none';
+  mobileMenu.style.top = "-100%";
+  closeMenu.style.display = "none";
 };
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
-document.querySelectorAll('.menu').forEach((menu) => {
-  menu.addEventListener('click', () => {
-    mobileMenu.style.display = 'none';
-    closeMenu.style.display = 'none';
+openMenu.addEventListener("click", show);
+closeMenu.addEventListener("click", close);
+document.querySelectorAll(".menu").forEach((menu) => {
+  menu.addEventListener("click", () => {
+    mobileMenu.style.display = "none";
+    closeMenu.style.display = "none";
   });
 });
 
 // Modal
-const openModalButtons = document.querySelectorAll('[data-modal-target]');
-const closeModalButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
+const openModalButtons = document.querySelectorAll("[data-modal-target]");
+const closeModalButtons = document.querySelectorAll("[data-close-button]");
+const overlay = document.getElementById("overlay");
 function openModal(modal) {
   if (modal == null) return;
-  modal.classList.add('active');
-  overlay.classList.add('active');
+  modal.classList.add("active");
+  overlay.classList.add("active");
 }
 function closeModal(modal) {
   if (modal == null) return;
-  modal.classList.remove('active');
-  overlay.classList.remove('active');
+  modal.classList.remove("active");
+  overlay.classList.remove("active");
 }
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active');
+overlay.addEventListener("click", () => {
+  const modals = document.querySelectorAll(".modal.active");
   modals.forEach((modal) => {
     closeModal(modal);
   });
 });
 const projects = [
   {
-    name: 'Multi Post Stories',
+    name: "Multi Post Stories",
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    featuredImage: './images/recent-works.png',
-    technology: ['html', 'Bootstrap', 'Ruby on Rails'],
-    liveVersion: 'https://kelomo2502.github.io/portfolio/',
-    sourceCode: 'https://github.com/kelomo2502/portfolio',
+    featuredImage: "./images/recent-works.png",
+    technology: ["html", "Bootstrap", "Ruby on Rails"],
+    liveVersion: "https://kelomo2502.github.io/portfolio/",
+    sourceCode: "https://github.com/kelomo2502/portfolio",
   },
   {
-    name: 'Multi Post Stories',
+    name: "Multi Post Stories",
     description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    featuredImage: './modal-images/project5.png',
-    technology: ['html', 'bootstrap', 'Ruby on Rails'],
-    liveVersion: 'https://kelomo2502.github.io/portfolio/',
-    sourceCode: 'https://github.com/kelomo2502/portfolio',
+    featuredImage: "./modal-images/project5.png",
+    technology: ["html", "bootstrap", "Ruby on Rails"],
+    liveVersion: "https://kelomo2502.github.io/portfolio/",
+    sourceCode: "https://github.com/kelomo2502/portfolio",
   },
   {
-    name: 'Multi Post Stories',
+    name: "Multi Post Stories",
     description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    featuredImage: './modal-images/project5.png',
-    technology: ['html', 'bootstrap', 'Ruby on Rails'],
-    liveVersion: 'https://kelomo2502.github.io/portfolio/',
-    sourceCode: 'https://github.com/kelomo2502/portfolio',
+    featuredImage: "./modal-images/project5.png",
+    technology: ["html", "bootstrap", "Ruby on Rails"],
+    liveVersion: "https://kelomo2502.github.io/portfolio/",
+    sourceCode: "https://github.com/kelomo2502/portfolio",
   },
   {
-    name: 'Multi Post Stories',
+    name: "Multi Post Stories",
     description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    featuredImage: './modal-images/project5.png',
-    technology: ['html', 'bootstrap', 'Ruby on Rails'],
-    liveVersion: 'https://kelomo2502.github.io/portfolio/',
-    sourceCode: 'https://github.com/kelomo2502/portfolio',
+    featuredImage: "./modal-images/project5.png",
+    technology: ["html", "bootstrap", "Ruby on Rails"],
+    liveVersion: "https://kelomo2502.github.io/portfolio/",
+    sourceCode: "https://github.com/kelomo2502/portfolio",
   },
   {
-    name: 'Multi Post Stories',
+    name: "Multi Post Stories",
     description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    featuredImage: './modal-images/project5.png',
-    technology: ['html', 'bootstrap', 'Ruby on Rails'],
-    liveVersion: 'https://kelomo2502.github.io/portfolio/',
-    sourceCode: 'https://github.com/kelomo2502/portfolio',
+    featuredImage: "./modal-images/project5.png",
+    technology: ["html", "bootstrap", "Ruby on Rails"],
+    liveVersion: "https://kelomo2502.github.io/portfolio/",
+    sourceCode: "https://github.com/kelomo2502/portfolio",
   },
   {
-    name: 'Multi Post Stories',
+    name: "Multi Post Stories",
     description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    featuredImage: './modal-images/project5.png',
-    technology: ['html', 'bootstrap', 'Ruby on Rails'],
-    liveVersion: 'https://kelomo2502.github.io/portfolio/',
-    sourceCode: 'https://github.com/kelomo2502/portfolio',
-  }
+    featuredImage: "./modal-images/project5.png",
+    technology: ["html", "bootstrap", "Ruby on Rails"],
+    liveVersion: "https://kelomo2502.github.io/portfolio/",
+    sourceCode: "https://github.com/kelomo2502/portfolio",
+  },
 ];
-const seeProjectBtn = document.querySelectorAll('.cards-btn');
+const seeProjectBtn = document.querySelectorAll(".cards-btn");
 seeProjectBtn.forEach((button, i) => {
-  button.addEventListener('click', () => {
+  button.addEventListener("click", () => {
     const project = projects[i];
-    const modalBody = document.querySelector('.popup-modal')
-
+    const modalBody = document.querySelector(".popup-modal");
 
     modalBody.innerHTML = `
     <div class="modal" id="modal">
@@ -105,8 +104,12 @@ seeProjectBtn.forEach((button, i) => {
           <button data-close-button class="close-button">&times;</button>
         </div>
         <ul class="modal-tech-list">
-          ${project.technology.map((tech) =>  `<li class="modal-tech-lists"><button>${tech}</button></li>`).join('')
-        }
+          ${project.technology
+            .map(
+              (tech) =>
+                `<li class="modal-tech-lists"><button>${tech}</button></li>`
+            )
+            .join("")}
         </ul>
       </div>
 
@@ -139,12 +142,12 @@ seeProjectBtn.forEach((button, i) => {
           </div>
         </div>
       </div>
-    </div>`
-    openModal(modal)
-    closeBtn = document.querySelector(".close-button")
-    closeBtn.addEventListener('click', () => {
-      modalBody.innerHTML = ""
-      closeModal(overlay)
-    })
+    </div>`;
+    openModal(modal);
+    closeBtn = document.querySelector(".close-button");
+    closeBtn.addEventListener("click", () => {
+      modalBody.innerHTML = "";
+      closeModal(overlay);
+    });
   });
 });

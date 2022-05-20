@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
 }
+
 .modal-header {
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
   font-weight: 700;
   line-height: 44px;
   text-align: left;
-  color: #172B4D;
+  color: #172b4d;
 
 }
 
@@ -53,7 +53,7 @@
 
 .modal-tech-lists > button {
   background: #fff;
-  font-size:13px ;
+  font-size:13px;
   line-height: 16px;
   padding: 5px 10px;
   outline: none;
@@ -81,7 +81,7 @@
   background: none;
   font-size: 1.5rem;
   font-weight: 400;
-  color:#67798E
+  color:#67798e;
 }
 
 .modal-footer {
@@ -105,7 +105,6 @@
   color: #fff;
   width: 7.4rem;
   text-transform: capitalize;
-
 }
 
 .see-live {
@@ -118,7 +117,6 @@
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  text-decoration: none;
   text-decoration: none;
   color: #fff;
   width: 7.4rem;
@@ -137,7 +135,6 @@
   background-color: #fff;
   width: 90%;
   padding: 16px;
- 
 }
 
 .modal.active {
@@ -162,7 +159,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .modal-header {
     justify-content: unset;
     gap: 7px;
@@ -204,14 +200,13 @@
   }
 
   .modal-tech-lists a {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
     text-align: left;
-
   }
   .modal {
-    height: 76vh;
+     height: 76vh;
   }
 }
