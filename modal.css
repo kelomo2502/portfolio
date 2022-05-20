@@ -26,7 +26,6 @@
   line-height: 44px;
   text-align: left;
   color: #172b4d;
-
 }
 
 .modal-image {
@@ -53,7 +52,7 @@
 
 .modal-tech-lists > button {
   background: #fff;
-  font-size:13px;
+  font-size: 13px;
   line-height: 16px;
   padding: 5px 10px;
   outline: none;
@@ -81,7 +80,7 @@
   background: none;
   font-size: 1.5rem;
   font-weight: 400;
-  color:#67798e;
+  color: #67798e;
 }
 
 .modal-footer {
@@ -103,7 +102,6 @@
   gap: 10px;
   text-decoration: none;
   color: #fff;
-  width: 7.4rem;
   text-transform: capitalize;
 }
 
@@ -119,26 +117,20 @@
   gap: 10px;
   text-decoration: none;
   color: #fff;
-  width: 7.4rem;
   text-transform: capitalize;
 }
 
 .modal {
   position: fixed;
   top: 50px;
-  left: 0;
-  right: 0;
+  left: 5%;
   bottom: 0;
-  transform: translate(5%, 0) scale();
   transition: 200ms ease-in-out;
   z-index: 10;
   background-color: #fff;
   width: 90%;
   padding: 16px;
-}
-
-.modal.active {
-  transform: translate(5%, 0) scale(1);
+  overflow: auto;
 }
 
 #overlay.active {
@@ -206,7 +198,8 @@
     line-height: 20px;
     text-align: left;
   }
+
   .modal {
-     height: 76vh;
+    height: max-content;
   }
 }
