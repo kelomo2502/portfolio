@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-y: auto;
+ 
 }
 .modal-header {
   display: flex;
@@ -173,15 +173,23 @@
 }
 
 @media screen and (min-width: 768px) {
+  /* body {
+    height: 90vh;
+     
+  }*/
   .modal-header {
     justify-content: unset;
     gap: 7px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   .desktop-modal {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   .modal-image {
@@ -202,5 +210,21 @@
   .modal-footer {
     justify-content: flex-start;
     gap: 5px;
+  }
+
+  .modal-body {
+    margin-top: -2px;
+  }
+
+  .modal-tech-lists a {
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+
+  }
+  .modal {
+    height: 76vh;
   }
 }
