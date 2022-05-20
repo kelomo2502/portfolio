@@ -41,7 +41,7 @@
   width: 100%;
 }
 
-.modal-header .modal-tech-list li {
+.modal-tech-list > li {
   list-style-type: none;
   border: 1px solid #dfe1e6;
   font-size: 13px;
@@ -115,7 +115,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  transform: translate(5%, 0) scale(0);
+  transform: translate(5%, 0) scale();
   transition: 200ms ease-in-out;
   z-index: 10;
   background-color: #fff;

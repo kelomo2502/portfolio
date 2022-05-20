@@ -34,30 +34,28 @@ function closeModal(modal) {
   modal.classList.remove('active');
   overlay.classList.remove('active');
 }
-openModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
-  });
-});
+// openModalButtons.forEach((button) => {
+//   button.addEventListener('click', () => {
+//     const modal = document.querySelector(button.dataset.modalTarget);
+//     openModal(modal);
+//   });
+// });
 overlay.addEventListener('click', () => {
   const modals = document.querySelectorAll('.modal.active');
   modals.forEach((modal) => {
     closeModal(modal);
   });
 });
-closeModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal');
-    closeModal(modal);
-  });
-});
+// closeModalButtons.forEach((button) => {
+//   button.addEventListener('click', () => {
+//     const modal = button.closest('.modal');
+//     closeModal(modal);
+//   });
+// });
 const projects = [
   {
-    name: 'Multi-Post Stories',
-    description: `A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text..`,
+    name: 'Professional Art Printing Data',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     featuredImage: './images/recent-works.png',
     technology: ['html', 'Bootstrap', 'Ruby on Rails'],
     liveVersion: 'https://kelomo2502.github.io/portfolio/',
@@ -65,34 +63,99 @@ const projects = [
   },
   {
     name: 'Professional Art Printing Data',
-    description: ` A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard`,
+    description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
     featuredImage: './modal-images/project5.png',
     technology: ['html', 'bootstrap', 'Ruby on Rails'],
     liveVersion: 'https://kelomo2502.github.io/portfolio/',
     sourceCode: 'https://github.com/kelomo2502/portfolio',
   },
+  {
+    name: 'Professional Art',
+    description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    featuredImage: './modal-images/project5.png',
+    technology: ['html', 'bootstrap', 'Ruby on Rails'],
+    liveVersion: 'https://kelomo2502.github.io/portfolio/',
+    sourceCode: 'https://github.com/kelomo2502/portfolio',
+  },
+  {
+    name: 'Professional Art Printing Data',
+    description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    featuredImage: './modal-images/project5.png',
+    technology: ['html', 'bootstrap', 'Ruby on Rails'],
+    liveVersion: 'https://kelomo2502.github.io/portfolio/',
+    sourceCode: 'https://github.com/kelomo2502/portfolio',
+  },
+  {
+    name: 'Professional Art Printing Data',
+    description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    featuredImage: './modal-images/project5.png',
+    technology: ['html', 'bootstrap', 'Ruby on Rails'],
+    liveVersion: 'https://kelomo2502.github.io/portfolio/',
+    sourceCode: 'https://github.com/kelomo2502/portfolio',
+  },
+  {
+    name: 'Professional Art',
+    description: ` Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    featuredImage: './modal-images/project5.png',
+    technology: ['html', 'bootstrap', 'Ruby on Rails'],
+    liveVersion: 'https://kelomo2502.github.io/portfolio/',
+    sourceCode: 'https://github.com/kelomo2502/portfolio',
+  }
 ];
 const seeProjectBtn = document.querySelectorAll('.cards-btn');
 seeProjectBtn.forEach((button, i) => {
   button.addEventListener('click', () => {
-    const modalMenu = document.querySelector('.modal');
     const project = projects[i];
-    const title = modalMenu.querySelector('.modal h4');
-    title.textContent = project.name;
-    const description = modalMenu.querySelector('.modal-body');
-    description.textContent = project.description;
-    const projectImage = modalMenu.querySelector('.modal img');
-    projectImage.src = project.featuredImage;
-    const liveLink = modalMenu.querySelector('.modal-footer .see-live');
-    liveLink.href = project.liveVersion;
-    const seeSource = modalMenu.querySelector('.modal-footer .see-source');
-    seeSource.href = project.sourceCode;
-    const techs = modalMenu.querySelectorAll('.modal-tech-lists');
-    techs.forEach((tech, idx) => {
-      tech.innerHTML = project.technology[idx];
-    });
+    const modalBody = document.querySelector('.popup-modal')
 
-    modalMenu.classList.add('active');
+    modalBody.innerHTML = `
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h4>${project.name}</h4>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <ul class="modal-tech-list">
+          ${project.technology.map((tech) =>  `<li class="modal-tech-lists"><button>${tech}</button></li>`).join('')
+        }
+        </ul>
+      </div>
+
+      <div class="desktop-modal">
+        <div class="modal-image">
+          <img src=${project.featuredImage} alt="project image" />
+        </div>
+        <div class="modal-body-footer">
+          <p class="modal-body">
+            ${project.description}
+          </p>
+          <div class="modal-footer">
+            <a
+              href=${project.liveVersion}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="see-live"
+              >see live<img src="./modal-images/see-live.png" alt=""
+            /></a>
+
+            <a
+              href=${project.sourceCode}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="see-source"
+              >see Source<img
+                src="./modal-images/github.png"
+                alt="github icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>`
+    openModal(modal)
+    closeBtn = document.querySelector(".close-button")
+    closeBtn.addEventListener('click', () => {
+      modalBody.innerHTML = ""
+      closeModal(overlay)
+    })
   });
 });
