@@ -46,7 +46,6 @@
 .modal-tech-list > li {
   list-style-type: none;
   border: 1px solid #dfe1e6;
-  /* padding: 5px 10px; */
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 20px;
@@ -126,16 +125,6 @@
   text-transform: capitalize;
 }
 
-/* .modal-footer .modal-footer-btn span {
-  font-family: "Inter", sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 10px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #fff;
-} */
-
 .modal {
   position: fixed;
   top: 50px;
@@ -173,10 +162,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* body {
-    height: 90vh;
-     
-  }*/
+
   .modal-header {
     justify-content: unset;
     gap: 7px;

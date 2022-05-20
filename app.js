@@ -34,24 +34,12 @@ function closeModal(modal) {
   modal.classList.remove('active');
   overlay.classList.remove('active');
 }
-// openModalButtons.forEach((button) => {
-//   button.addEventListener('click', () => {
-//     const modal = document.querySelector(button.dataset.modalTarget);
-//     openModal(modal);
-//   });
-// });
 overlay.addEventListener('click', () => {
   const modals = document.querySelectorAll('.modal.active');
   modals.forEach((modal) => {
     closeModal(modal);
   });
 });
-// closeModalButtons.forEach((button) => {
-//   button.addEventListener('click', () => {
-//     const modal = button.closest('.modal');
-//     closeModal(modal);
-//   });
-// });
 const projects = [
   {
     name: 'Multi Post Stories',
