@@ -188,7 +188,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 36px;
+    padding-left: 20px;
     padding-right: 36px;
   }
 
@@ -205,6 +205,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 4px;
   }
 
   .modal-footer {
