@@ -1,11 +1,12 @@
-# MY Personal portfolio Project
+# Awesome Books Project
 
-> This project is part of Module 1 Week 2 Microverse curriculum where we learn how to create UIs adaptable to different screen sizes using media queries and template according to figma design
+> This project is part of Module 2 Week 1 Microverse curriculum where we learn how to  Create and access properties and methods of JavaScript objects.
 
 ## Built With
 
 - HTML
 - CSS
+-Javascript
 
 ## Getting Started
 
@@ -22,7 +23,7 @@ All you need to clone this on your local machine is any command-line interface l
 ## Instruction on how to clone this page
 
 - Run this comands in your command line:
-- git clone https://github.com/kelomo2502/portfolio-setup.git
+- git clone https://github.com/kelomo2502/awesome-books.git
 
 ## Author
 
